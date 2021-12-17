@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Create Post</title>
+{% endblock %}
+
+{% block header %}
+<h1>Zambbo</h1>
+<br>
+<hr>
+{% endblock %}
+
+{% block main %}
+<form action="/new" method="POST">
+    <label for="category">Category</label>
+    <input type="text" name="category" id="category" placeholder="Write your category">
+    <br>
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title" placeholder="Write your title">
+    <br>
+    <label for="post">Post</label>
+    <textarea id="post" name="post" placeholder="Enter Content" rows="30"></textarea>
+    <br>
+    <input type="submit" value="submit">
+</form>
+{% endblock %}
+
+{% block footer %}
+<small>zambbo</small>
+{% endblock %}

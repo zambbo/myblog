@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Category-posts</title>
+{% endblock %}
+
+{% block header %}
+<h1>Zambbo</h1>
+<br>
+<hr>
+{% endblock %}
+
+{% block main %}
+{% for post in posts %}
+    <h1>{{post.title}}</h1>
+    <br>
+    <p>{{post.content}}</p>
+    <br>
+{% endfor %}
+    <hr>
+{% endblock %}
+
+{% block footer %}
+<small>zambbo</small>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Category</title>
+{% endblock %}
+
+{% block header %}
+<h1>Zambbo</h1>
+<br>
+<hr>
+{% endblock %}
+
+{% block main %}
+{% for category in categorys %}
+    <a href="/posts/category/{{category.category_name}}">{{category.category_name}}</a>
+    <br>
+{% endfor %}
+    <hr>
+{% endblock %}
+
+{% block footer %}
+<small>zambbo</small>
+{% endblock %}
