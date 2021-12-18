@@ -1,0 +1,35 @@
+h1 {
+    text-align : center;
+}
+nav {
+    background-color : #777777;
+    text-align : center;
+}
+
+.post {
+    border : 3px solid #000000;
+    display : block;
+    margin : 10px;
+}
+
+a {
+    display : inline-block;
+    
+    width : 10%;
+    margin : 1%;
+
+    background-color : #000000;
+    color : #FFFFFF;
+    font-size : 10%;
+    text-align : center;
+}
+
+a:hover {
+    background-color : #777777;
+    color : #000000;
+}
+
+a:visited {
+    background-color : purple;
+    color : #FFFFFF;
+}

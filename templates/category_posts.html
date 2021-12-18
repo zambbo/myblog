@@ -12,10 +12,14 @@
 
 {% block main %}
 {% for post in posts %}
-    <h1>{{post.title}}</h1>
-    <br>
-    <p>{{post.content}}</p>
-    <br>
+    <div class="post">
+        <h1>{{post.title}}</h1>
+        <br>
+        <p>{{post.content}}</p>
+        <br>
+        <small>{{post.posted_date}}</small>
+        <br>
+    </div>
 {% endfor %}
     <hr>
 {% endblock %}
